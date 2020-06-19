@@ -10,6 +10,7 @@ media
 *.bak
 
 # If you are using PyCharm #
+.idea/
 .idea/**/workspace.xml
 .idea/**/tasks.xml
 .idea/dictionaries
@@ -115,3 +116,5 @@ GitHub.sublime-settings
 !.vscode/extensions.json
 .history
 /.idea/vcs.xml
+/.idea/bookmarks.iml
+/.idea/codestream.xml
