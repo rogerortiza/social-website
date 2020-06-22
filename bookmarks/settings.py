@@ -25,7 +25,7 @@ SECRET_KEY = 'z5+g%sj$!cdgpj$2g_5p6u-+z!nh^$#c3ya4r*se+enukt$ijb'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['roger.com', 'locaclhost', '127.0.0.1']
 
 
 # Application definition
@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_extensions',
+    'social_django',
 ]
 
 MIDDLEWARE = [
@@ -103,7 +105,12 @@ AUTH_PASSWORD_VALIDATORS = [
 AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
     'account.authentication.EmailAuthBackend',
+    'social_core.backends.facebook.FacebookOAuth2',
 ]
+
+SOCIAL_AUTH_FACEBOOK_KEY = '258549241912157'
+SOCIAL_AUTH_FACEBOOK_SECRET = 'f8b15b6700f7a4f4f9263672eabc49f7'
+SOCIAL_AUTH_FACEBOOK_SCOPE = ['email']
 
 
 # Internationalization
