@@ -118,3 +118,5 @@ GitHub.sublime-settings
 /.idea/vcs.xml
 /.idea/bookmarks.iml
 /.idea/codestream.xml
+/cert.crt
+/cert.key

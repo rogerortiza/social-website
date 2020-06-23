@@ -106,12 +106,19 @@ AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
     'account.authentication.EmailAuthBackend',
     'social_core.backends.facebook.FacebookOAuth2',
+    'social_core.backends.twitter.TwitterOAuth',
+    'social_core.backends.google.GoogleOAuth2',
 ]
 
 SOCIAL_AUTH_FACEBOOK_KEY = '258549241912157'
 SOCIAL_AUTH_FACEBOOK_SECRET = 'f8b15b6700f7a4f4f9263672eabc49f7'
 SOCIAL_AUTH_FACEBOOK_SCOPE = ['email']
 
+SOCIAL_AUTH_TWITTER_KEY = ''
+SOCIAL_AUTH_TWITTER_SECRET = ''
+
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '56339931303-k4smjsovu3ts6nkfub4r0ij7sp4bthrl.apps.googleusercontent.com'
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = 'Zvdex32fmdmAoIj3fNyraQPs'
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
