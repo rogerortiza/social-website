@@ -25,7 +25,7 @@ SECRET_KEY = 'z5+g%sj$!cdgpj$2g_5p6u-+z!nh^$#c3ya4r*se+enukt$ijb'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['roger.com', 'locaclhost', '127.0.0.1']
+ALLOWED_HOSTS = ['roger.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django_extensions',
     'social_django',
+    'images.apps.ImagesConfig',
 ]
 
 MIDDLEWARE = [
