@@ -8,4 +8,5 @@ urlpatterns = [
     path('create/', image_create, name='create'),
     path('detail/<int:id>/<slug:slug>/', image_detail, name='detail'),
     path('like/', image_like, name='like'),
+    path('ranking/', image_ranking, name='ranking')
 ]
